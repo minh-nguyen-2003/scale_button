@@ -7,13 +7,113 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pressPivot="top"
+        app:pressScale="0.95"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Top Left"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView"
+        app:pressPivot="top_left"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Top Right"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView2"
+        app:pressPivot="top_right"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Center"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView3"
+        app:pressPivot="center"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Left"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView4"
+        app:pressPivot="left"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Right"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView5"
+        app:pressPivot="right"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Bottom"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView6"
+        app:pressPivot="bottom"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:id="@+id/buttonView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Bottom Left"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView8"
+        app:pressPivot="bottom_left"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <vn.minh_nguyen.vkey.scale_button.ButtonScale
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="Bottom Right"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView9"
+        app:pressPivot="bottom_right"
+        tools:layout_editor_absoluteX="20dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
