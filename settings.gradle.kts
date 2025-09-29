@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ScaleButton"
 include(":app")
- 
+include(":scale_button")
